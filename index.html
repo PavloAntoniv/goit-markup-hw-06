@@ -518,16 +518,50 @@
             />
           </svg>
         </button>
-        <h1>Залиште свої дані, ми вам передзвонимо</h1>
-        <form>
-          <div class="form-modal">
-            <label for="name"> Ім'я </label>
-            <input type="text" name="name" id="name" />
-            <svg>
+
+        <form class="form-modal">
+          <h1 class="madal-form-title">
+            Залиште свої дані, ми вам передзвонимо
+          </h1>
+          <div class="form-field">
+            <label class="modal-label" for="name"> Ім'я </label>
+            <input class="modal-name-input" type="text" name="name" id="name" />
+            <svg class="modal-name-svg">
               <use
                 href="./images/spryte modal.svg#icon-vectir-name-black"
               ></use>
             </svg>
+          </div>
+
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <div class="modal-input">
+              <input type="tel" name="tel" id="tel" />
+              <svg class="modal-name-svg">
+                <use href="./images/spryte modal.svg#icon-phone-vector"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="mail">Пошта</label>
+            <input type="email" name="mail" id="mail" />
+            <svg class="modal-name-svg">
+              <use href="./images/spryte modal.svg#icon-mail-vector"></use>
+            </svg>
+          </div>
+          <label for="comment">Коментар</label>
+          <textarea
+            name="comment"
+            id="comment"
+            rows="20"
+            placeholder="Введіть текст"
+          ></textarea>
+          <div class="form-field">
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="accept-policy" href="#">Умови договору</a>
+            </label>
           </div>
         </form>
       </div>
