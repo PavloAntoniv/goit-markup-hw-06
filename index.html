@@ -475,8 +475,32 @@
             </li>
           </ul>
         </div>
+
+        <!----------------- form subscribe  ----------------->
+        <div class="form-footer">
+          <h2 class="lable-subscribe-title">Підпишіться на розсилку</h2>
+          <form class="form-subscribe">
+            <label class="lable-subscribe" for="subscribe"></label>
+
+            <input
+              class="input-subscribe"
+              type="mail"
+              id="subscribe"
+              placeholder="E-mail"
+            />
+
+            <button class="button-subscribe" type="submit">
+              Підписатися
+              <svg class="icon-subscribe">
+                <use href="./images/spryte modal.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!--------------------- modal---------------- -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="close-black" type="button">
@@ -494,6 +518,18 @@
             />
           </svg>
         </button>
+        <h1>Залиште свої дані, ми вам передзвонимо</h1>
+        <form>
+          <div class="form-modal">
+            <label for="name"> Ім'я </label>
+            <input type="text" name="name" id="name" />
+            <svg>
+              <use
+                href="./images/spryte modal.svg#icon-vectir-name-black"
+              ></use>
+            </svg>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
