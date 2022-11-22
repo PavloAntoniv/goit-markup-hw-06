@@ -953,6 +953,10 @@ ul {
 .close-black {
   position: absolute;
   display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
   right: 0;
   margin-top: 8px;
   margin-right: 8px;
@@ -960,11 +964,14 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   transition-property: var(--background-color);
-  transition-duration: 2050ms;
+  transition-duration: 250ms;
   transition-timing-function: scale(0.4, 0, 0.2, 1);
 }
 .close-black:hover {
-  background-color: var(--background-color);
+  color: #2196f3;
+}
+.icon-close-madal {
+  fill: currentColor;
 }
 
 /* -------------- madal form -------------- */
@@ -1022,11 +1029,15 @@ textarea {
   border-radius: 4px;
   outline: none;
 }
+.modal-name-input:hover,
 .modal-name-input:focus {
   border: 1px solid var(--background-color);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-name-input:hover,
 .modal-name-input:focus ~ .modal-name-svg {
   fill: #2196f3;
 }
@@ -1078,4 +1089,35 @@ textarea:hover {
 .form-button:focus {
   background: var(--title-text-color);
   color: var(--background-color);
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.label-checkbox {
+  display: flex;
+  margin-left: 54px;
+  align-items: center;
+}
+.icon-checkbox {
+  display: block;
+  padding-top: 2px;
+  width: 16px;
+  height: 15px;
+  margin-right: 10px;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 4px;
+}
+
+.checkbox:checked + .icon-checkbox {
+  border-color: #2196f3;
+
+  background-color: var(--background-color);
+  background-image: url(/images/icon\ check.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
 }
