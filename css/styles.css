@@ -1110,21 +1110,21 @@ textarea:hover {
 }
 .icon-checkbox {
   display: flex;
-
-  padding-top: 1px;
+  padding-top: 2px;
   width: 16px;
   height: 15px;
   margin-right: 10px;
   align-items: center;
   border: 1px solid var(--primary-text-color);
   border-radius: 4px;
+  fill: currentColor;
 }
 
 .checkbox:checked + .icon-checkbox {
   border-color: #2196f3;
 
   background-color: var(--background-color);
-  background-image: url(/images/icon\ check.svg);
+  background-image: url(/images/icon-check.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-origin: content-box;
