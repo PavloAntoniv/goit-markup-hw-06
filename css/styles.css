@@ -1103,11 +1103,13 @@ textarea:hover {
   align-items: center;
 }
 .icon-checkbox {
-  display: block;
-  padding-top: 2px;
+  display: flex;
+
+  padding-top: 1px;
   width: 16px;
   height: 15px;
   margin-right: 10px;
+  align-items: center;
   border: 1px solid var(--primary-text-color);
   border-radius: 4px;
 }
