@@ -1006,10 +1006,15 @@ textarea {
   margin-bottom: 12px;
   display: flex;
   flex-direction: column;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
+
   letter-spacing: 0.01em;
+
+  color: #757575;
 }
 
 .lable-modal {
@@ -1029,7 +1034,7 @@ textarea {
   border-radius: 4px;
   outline: none;
 }
-.modal-name-input:hover,
+
 .modal-name-input:focus {
   border: 1px solid var(--background-color);
   border-radius: 4px;
@@ -1037,7 +1042,6 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-name-input:hover,
 .modal-name-input:focus ~ .modal-name-svg {
   fill: #2196f3;
 }
@@ -1101,6 +1105,7 @@ textarea:hover {
   display: flex;
   margin-left: 54px;
   align-items: center;
+  margin: 30px;
 }
 .icon-checkbox {
   display: flex;
