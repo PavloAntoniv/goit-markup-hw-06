@@ -1084,10 +1084,13 @@ textarea:focus {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.form-button:hover,
 .form-button:focus {
   background: var(--title-text-color);
   color: var(--background-color);
+  transition-property: backround-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox {
