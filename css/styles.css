@@ -1123,6 +1123,7 @@ textarea:focus {
   border-color: var(--background-color);
   background-color: var(--background-color);
   background-image: url("/images/icon-check-form.svg");
+  fill: var(--white-color);
   background-repeat: no-repeat;
   background-size: contain;
   background-origin: content-box;
