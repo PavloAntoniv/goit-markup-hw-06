@@ -1122,8 +1122,7 @@ textarea:focus {
 .checkbox:checked + .icon-checkbox {
   border-color: var(--background-color);
   background-color: var(--background-color);
-  background-image: url("/images/icon-check-form.svg");
-  fill: var(--white-color);
+  background-image: url("../images/icon-check-form.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-origin: content-box;
