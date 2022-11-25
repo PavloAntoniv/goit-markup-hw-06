@@ -761,9 +761,10 @@ ul {
 .footer-link-social {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .footer-social-contener {
-  margin-left: 70px;
+  /* margin-left: 70px; */
 }
 .title-footer-social {
   color: var(--white-color);
@@ -817,13 +818,12 @@ ul {
 
 .form-subscribe {
 }
-.form-footer {
+/* .form-footer {
   display: block;
   min-width: 570px;
   min-height: 86px;
-  margin-left: 93px;
-  margin-right: auto;
-}
+} */
+
 .lable-subscribe-title {
   font-weight: 700;
   font-size: 14px;
@@ -983,11 +983,13 @@ textarea {
   padding: 8px;
   border-radius: 4px;
   outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .form-modal {
   width: 528px;
-
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   padding: 40px;
 }
 .madal-form-title {
@@ -995,7 +997,6 @@ textarea {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-
   margin-bottom: 10px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -1008,6 +1009,7 @@ textarea {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+
   color: var(--paragraf-color);
 }
 
@@ -1026,6 +1028,9 @@ textarea {
   padding-left: 30px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition-property: var(--background-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
@@ -1049,8 +1054,10 @@ textarea {
   transform: translateY(-50%);
   width: 12px;
   height: 12px;
+  transition-property: var(--background-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
-  fill: currentColor;
 }
 
 textarea:focus {
@@ -1100,12 +1107,10 @@ textarea:focus {
   position: absolute;
 }
 .label-checkbox {
-  display: inline-block;
-  width: 425px;
-  height: 24px;
-  margin-left: 18px;
+  display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  justify-content: center;
+  line-height: 24px;
 }
 .icon-checkbox {
   display: inline-block;
@@ -1114,7 +1119,7 @@ textarea:focus {
   height: 15px;
   margin-right: 8px;
   align-items: center;
-  border: 1px solid var(--primary-text-color);
+  border: 2px solid var(--primary-text-color);
   border-radius: 4px;
   fill: currentColor;
 }
@@ -1133,14 +1138,12 @@ textarea:focus {
 }
 
 .text-policy {
-  width: 400.62px;
-  height: 24px;
-  display: inline;
-
+  display: flex;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--paragraf-color);
+  margin-bottom: 30px;
 }
 
 .accept-policy {
