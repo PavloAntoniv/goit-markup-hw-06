@@ -984,6 +984,9 @@ textarea {
   border-radius: 4px;
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  transition-property: var(--background-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-modal {
@@ -1061,8 +1064,10 @@ textarea {
 }
 
 textarea:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--background-color);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .accept-policy {
   color: var(--background-color);
