@@ -807,7 +807,7 @@ ul {
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  background-color: #2196f3;
+  background-color: var(--background-color);
   color: var(--white-color);
 }
 .webstudio-adress {
@@ -818,11 +818,6 @@ ul {
 
 .form-subscribe {
 }
-/* .form-footer {
-  display: block;
-  min-width: 570px;
-  min-height: 86px;
-} */
 
 .lable-subscribe-title {
   font-weight: 700;
@@ -830,7 +825,7 @@ ul {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .input-subscribe {
   display: inline-flex;
@@ -1149,6 +1144,7 @@ textarea:focus {
   letter-spacing: 0.03em;
   color: var(--paragraf-color);
   margin-bottom: 30px;
+  justify-content: center;
 }
 
 .accept-policy {
